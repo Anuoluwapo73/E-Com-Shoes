@@ -275,6 +275,10 @@ strong {
     box-sizing: border-box;
     /* width: 200%; */
     width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .nav-cont ul {
     display: none;
@@ -313,7 +317,7 @@ strong {
   .img-disp {
     /* background-size: cover; */
     /* margin-left: 10px; */
-    width: 375px;
+    /* width: 100%; */
     height: 590px;
     border-radius: 0;
   }
@@ -321,7 +325,7 @@ strong {
     display: none;
   }
   .text-cont {
-    padding: 0 20px 0 20px;
+    padding: 0 20px 0 40px;
   }
   .text-cont h5 {
     font-size: 20px;
@@ -332,7 +336,7 @@ strong {
   }
   .text-cont > p {
     font-size: 30px;
-    max-width: 100%;
+    /* max-width: 100%; */
     letter-spacing: 2px;
     /* word-spacing: 2px; */
     line-height: 45px;
