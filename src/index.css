@@ -308,9 +308,10 @@ strong {
 
   .menu {
     display: inline;
-    height: 30px;
-    width: 35px;
+    height: 20px;
+    width: 25px;
   }
+
   .sub-container {
     margin-top: 0;
     display: flex;
@@ -321,12 +322,13 @@ strong {
   }
   .sneakers {
     width: 100px;
-    height: 35px;
+    height: 30px;
     margin-left: -40px;
   }
   .nav-right-img {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
+    /* margin-right: 15px; */
   }
   .img-disp {
     /* margin-left: 10px; */
@@ -339,29 +341,33 @@ strong {
     display: none;
   }
   .text-cont {
-    padding: 0 15px 0 15px;
+    padding: 0 20px 0 20px;
   }
   .text-cont h5 {
-    /* font-size: 20px; */
+    font-size: 10px;
     letter-spacing: 5px;
+  }
+  .text-cont h1 {
+    font-size: 25px;
   }
 
   .text-cont > p {
     font-size: 16px;
     /* max-width: 100%; */
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     /* word-spacing: 2px; */
-    line-height: 30px;
+    line-height: 25px;
   }
   .price-h {
     gap: 10px;
   }
   .price-h > h2 {
-    /* font-size: 50px; */
-    letter-spacing: 2px;
+    font-size: 23px;
+    /* letter-spacing: 2px; */
   }
   .price-h p {
-    /* font-size: 30px; */
+    font-size: 15px;
+    padding: 7px;
   }
   .up-price-h {
     display: flex;
@@ -377,7 +383,7 @@ strong {
     flex-direction: column;
   }
   .btns {
-    height: 50px;
+    height: 45px;
     display: flex;
     justify-content: space-between;
     /* font-size: 40px; */
@@ -389,7 +395,7 @@ strong {
   }
   .btns-section button {
     width: 100%;
-    height: 50px;
+    height: 45px;
     margin: 5px 0 40px 0;
     /* font-size: 25px; */
     display: flex;
@@ -405,9 +411,42 @@ strong {
   }
   .cart-card {
     position: absolute;
-    top: 120px;
+    top: 90px;
     right: 10px; /* keep it inside the screen */
     width: 90%; /* or a fixed px width like 300px */
     max-width: 350px;
   }
+  .nav-btns {
+    position: absolute;
+    display: flex;
+    top: 220px;
+    left: 0;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+  }
+  .nav-btns img {
+    border-radius: 50%;
+    background-color: white;
+    width: 40px;
+    height: 45px;
+    padding: 15px;
+  }
+  .img-wrapper {
+  position: relative;   /* makes the container a positioning context */
+  display: inline-block;
+}
+.superscript {
+  position: absolute;
+  top: -5px;     /* push upward */
+  right: -5px;   /* push right */
+  font-size: 14px;
+  font-weight: bold;
+  background-color: hsl(26, 100%, 55%);
+  border-radius: 50%;    /* example color */
+  padding: 3px;
+  height: 20px;
+  width: 15px;
+  text-align: center;
+}
 }

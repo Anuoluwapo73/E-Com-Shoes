@@ -12,21 +12,25 @@ function Navbar({ cartItems, deleteCartItem, cartOpen, setCartOpen }) {
       <div className="navbar">
         <img className="menu" src={menu} />
         <img className="sneakers" src={sneakers} />
-        <ul>
-          <li>Collections</li>
-          <li>Men</li>
-          <li>Women</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
+        {window.innerHeight > 768 && (
+          <ul>
+            <li>Collections</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        )}
       </div>
       <div className="nav-imgs">
         {/* //Workarea */}
-        <img
-          onClick={() => setCartOpen(true)}
-          src={cart}
-          className="nav-right-img"
-        />
+        <div className="img-wrapper">
+          <img
+            onClick={() => setCartOpen(true)}
+            src={cart}
+            className="nav-right-img"
+          /><sup className="superscript">{cartItems.length}</sup>
+        </div>
         {cartOpen && (
           <div className="cart-card">
             <div className="cart-card-top">

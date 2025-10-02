@@ -1,34 +1,43 @@
 import React, { useState } from "react";
 // import "./Lightbox.css";
 
-function Images({ thumbnails, thumbnail, setThumbnail, image, handleImage }) {
+function Images({ handlePrev, previous,handleNext,next, thumbnails, thumbnail, setThumbnail, image, handleImage }) {
   const [showLightbox, setShowLightbox] = useState(false);
 
   return (
     <div className="cont-div">
       {/* Main Image */}
+      <div className="nav-btns">
+        <img src={previous} onClick={()=>handlePrev()}/>
+        <img src={next} onClick={()=>handleNext()}/>
+      </div>
       <img
         id="thumbnail"
-        src={image}
+        src={thumbnail}
         className="img-disp"
         alt="main"
-        onClick={() => setShowLightbox(true)} // open lightbox when clicked
+        onClick={() => {
+          if (window.innerWidth > 768) {
+            setShowLightbox(true);
+          }
+        }} // open lightbox when clicked
       />
 
       {/* Thumbnails */}
-      <div className="imgs-div">
+      {<div className="imgs-div">
         {thumbnails.map((img, index) => (
           <img
             onClick={(e) => {
-              handleImage(e);
-              setThumbnail(img);
+              if (window.innerWidth > 768)
+              {handleImage(e);
+              setThumbnail(img);}
             }}
             className="imgs"
             key={index}
             src={img}
           />
         ))}
-      </div>
+      </div>}
 
       {/* Lightbox */}
       {showLightbox && (
