@@ -313,7 +313,7 @@ strong {
   .img-disp {
     /* background-size: cover; */
     /* margin-left: 10px; */
-    width: 110%;
+    width: 375px;
     height: 590px;
     border-radius: 0;
   }
