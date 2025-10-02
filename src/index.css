@@ -274,7 +274,7 @@ strong {
     padding: 0;
     box-sizing: border-box;
     /* width: 200%; */
-    width: 100%;
+    width: max-content;
   }
   .nav-cont ul {
     display: none;
@@ -312,7 +312,7 @@ strong {
   }
   .img-disp {
     /* background-size: cover; */
-    margin-left: 50px;
+    /* margin-left: 10px; */
     width: 110%;
     height: 590px;
     border-radius: 0;
