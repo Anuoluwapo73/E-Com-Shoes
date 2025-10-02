@@ -312,8 +312,8 @@ strong {
   }
   .img-disp {
     /* background-size: cover; */
-    width: 110%;
-    height: 650px;
+    width: 95%;
+    height: 550px;
     border-radius: 0;
   }
   .imgs {
@@ -333,8 +333,8 @@ strong {
     font-size: 30px;
     max-width: 100%;
     letter-spacing: 2px;
-    word-spacing: 2px;
-    line-height: 38px;
+    /* word-spacing: 2px; */
+    line-height: 45px;
   }
   .price-h {
     gap: 50px;
